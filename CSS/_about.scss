@@ -1,0 +1,38 @@
+.about{
+    background-color: $darkViolet;
+    text-align: center;
+    margin: 0px 22px 136px 22px;
+    padding: 77px 42px 72px 46px;
+    color: white;
+    
+    h1{
+        font-size: 1.8125rem;
+        margin-bottom: 46px;
+    }
+
+    a{
+        border: 1px solid $veryLightGray;
+        font-size: 0.75rem;
+        padding: 14px 22px 14px 22px;
+        
+    }
+
+    @include breakpoint-up(large){
+        display: flex;
+        justify-content: space-between;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 4.9375rem 5rem 4.75rem 5.125rem;
+        align-items: center;
+        margin-bottom: 146px;
+
+        
+        h1{
+            margin: 0px;
+            font-size: 3.1875rem;
+            max-width: 29.5rem;
+            text-align: left;
+            line-height: 1;
+        }
+    }
+}

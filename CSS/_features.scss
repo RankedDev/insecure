@@ -1,0 +1,75 @@
+.features{
+    text-align: center;
+    //border: 1px solid red;
+
+    @include breakpoint-up(large){
+        max-width: 1110px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    
+
+    &__boost{
+        font-family: 'DM Serif Display', serif;
+        margin-bottom: 70px;
+        font-size: 2.1563rem;
+        @include breakpoint-up(large){
+            text-align: left;
+            font-size: 3rem;
+
+        }
+        
+    }
+    &__grid{
+        margin-top: 2rem;
+        margin-bottom: 142px;
+        display: grid;
+        gap:50px;
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(3,1fr) ;
+            gap: 20px;
+            text-align: left;
+            
+        }
+
+        
+        .feature{
+            
+    
+            &__img{
+                margin-bottom: 42px;
+    
+    
+            }
+    
+            &__name{
+                margin-bottom: 25px;
+    
+                h3{
+                    font-size: 1.875rem;
+    
+                }
+            }
+    
+            &__title{
+                padding: 0px 25px;
+                color: $darkGrayishViolet;
+
+
+                P{
+
+                    font-size: 0.9437rem;
+
+                }
+                @include breakpoint-up(large){
+                   text-align: left; 
+                   padding: 0;
+                }
+
+
+    
+            }
+        }
+    }
+}

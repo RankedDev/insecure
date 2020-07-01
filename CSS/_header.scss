@@ -1,0 +1,62 @@
+.header{
+    nav{
+        padding: 24px;
+
+        @include breakpoint-up(large){
+
+            padding: 36px 24px 33px 24px;
+        }
+    }
+
+
+    &__logo{
+        @include breakpoint-up(large){
+            margin-left: 140px;
+        }
+
+
+        img{
+
+
+        }
+
+    }
+
+    &__menu{
+
+        
+
+        img{
+
+        }
+
+    }
+
+    &__links{
+
+        a{
+            color: $darkGrayishViolet;
+
+            &:not(:last-child){
+
+                margin-right: 28px;
+            }
+
+            &:last-child{
+                border: 1px solid #2b272f;
+                padding: 0.875rem 1.8125rem 0.875rem 1.8125rem;
+                margin-right: 140px;
+
+                &:hover{
+                    background-color: $veryDarkViolet ;
+                    color: white;
+                    //font-weight: 700;
+                }
+
+            }
+        }
+        
+    }
+    
+
+}
